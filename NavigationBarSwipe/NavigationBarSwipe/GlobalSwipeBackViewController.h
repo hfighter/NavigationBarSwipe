@@ -10,4 +10,7 @@
 
 @interface GlobalSwipeBackViewController : UIViewController
 
+// 全屏返回
+@property (nonatomic, assign) BOOL enableGlobalBack;
+
 @end

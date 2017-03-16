@@ -15,6 +15,8 @@
 		7B2BFDE11E7A40DC004FF659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2BFDDF1E7A40DC004FF659 /* LaunchScreen.storyboard */; };
 		7B2BFDEC1E7A40DD004FF659 /* NavigationBarSwipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFDEB1E7A40DD004FF659 /* NavigationBarSwipeTests.m */; };
 		7B2BFDF71E7A40DD004FF659 /* NavigationBarSwipeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFDF61E7A40DD004FF659 /* NavigationBarSwipeUITests.m */; };
+		7B2BFE061E7A6F71004FF659 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE051E7A6F71004FF659 /* FirstViewController.m */; };
+		7B2BFE0C1E7A77B8004FF659 /* GlobalSwipeBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE0B1E7A77B8004FF659 /* GlobalSwipeBackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		7B2BFDF21E7A40DD004FF659 /* NavigationBarSwipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationBarSwipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2BFDF61E7A40DD004FF659 /* NavigationBarSwipeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarSwipeUITests.m; sourceTree = "<group>"; };
 		7B2BFDF81E7A40DD004FF659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B2BFE041E7A6F71004FF659 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		7B2BFE051E7A6F71004FF659 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		7B2BFE0A1E7A77B8004FF659 /* GlobalSwipeBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSwipeBackViewController.h; sourceTree = "<group>"; };
+		7B2BFE0B1E7A77B8004FF659 /* GlobalSwipeBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSwipeBackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				7B2BFDD51E7A40DC004FF659 /* AppDelegate.m */,
 				7B2BFDD71E7A40DC004FF659 /* ViewController.h */,
 				7B2BFDD81E7A40DC004FF659 /* ViewController.m */,
+				7B2BFE041E7A6F71004FF659 /* FirstViewController.h */,
+				7B2BFE051E7A6F71004FF659 /* FirstViewController.m */,
+				7B2BFE0A1E7A77B8004FF659 /* GlobalSwipeBackViewController.h */,
+				7B2BFE0B1E7A77B8004FF659 /* GlobalSwipeBackViewController.m */,
 				7B2BFDDA1E7A40DC004FF659 /* Main.storyboard */,
 				7B2BFDDD1E7A40DC004FF659 /* Assets.xcassets */,
 				7B2BFDDF1E7A40DC004FF659 /* LaunchScreen.storyboard */,
@@ -277,6 +287,8 @@
 				7B2BFDD91E7A40DC004FF659 /* ViewController.m in Sources */,
 				7B2BFDD61E7A40DC004FF659 /* AppDelegate.m in Sources */,
 				7B2BFDD31E7A40DC004FF659 /* main.m in Sources */,
+				7B2BFE0C1E7A77B8004FF659 /* GlobalSwipeBackViewController.m in Sources */,
+				7B2BFE061E7A6F71004FF659 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

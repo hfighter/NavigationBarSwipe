@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GlobalSwipeBackViewController.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : GlobalSwipeBackViewController
 
 @end

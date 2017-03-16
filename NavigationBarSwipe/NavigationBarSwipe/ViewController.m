@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FirstViewController.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"first";
+    [self addButton];
+    [self setNavgatioBar];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self setNavgatioBar];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self resetNavigationBar];
+}
+
+- (void)setNavgatioBar {
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+}
+
+- (void)resetNavigationBar {
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+}
+
+- (void)addButton {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"push" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+    button.frame = CGRectMake(0, 0, 100, 40);
+    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    button.center = CGPointMake((CGRectGetWidth([UIScreen mainScreen].bounds)-CGRectGetWidth(button.frame))/2.f, (CGRectGetHeight([UIScreen mainScreen].bounds)-CGRectGetHeight(button.frame))/2.f);
+    [self.view addSubview:button];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)push {
+    FirstViewController *viewController = [[FirstViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 

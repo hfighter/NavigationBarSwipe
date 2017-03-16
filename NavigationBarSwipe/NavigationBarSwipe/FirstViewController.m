@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "UIViewController+HideNavigationBarBottomLine.h"
 
 @interface FirstViewController ()
 // 启用侧板返回功能
@@ -30,6 +31,9 @@ UIGestureRecognizerDelegate
 //    [self enableGlobalBack];
     self.enableGlobalBack = YES;
     NSLog(@"self.enableGlobalBack is %@", @(self.enableGlobalBack));
+    
+    // 3.隐藏导航栏底部黑线
+    [self hideNavigationBarBottomLine];
 }
 
 // 添加自定义返回， 但是侧边返回失效

@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"first";
+    self.view.backgroundColor = [UIColor redColor];
     [self addButton];
     [self setNavgatioBar];
 }

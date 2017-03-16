@@ -18,6 +18,8 @@
 		7B2BFE061E7A6F71004FF659 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE051E7A6F71004FF659 /* FirstViewController.m */; };
 		7B2BFE0C1E7A77B8004FF659 /* GlobalSwipeBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE0B1E7A77B8004FF659 /* GlobalSwipeBackViewController.m */; };
 		7B2BFE0F1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE0E1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m */; };
+		7B2BFE131E7A9347004FF659 /* AnimationNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE121E7A9347004FF659 /* AnimationNavigationViewController.m */; };
+		7B2BFE161E7A9623004FF659 /* NavigationAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE151E7A9623004FF659 /* NavigationAnimationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		7B2BFE0B1E7A77B8004FF659 /* GlobalSwipeBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSwipeBackViewController.m; sourceTree = "<group>"; };
 		7B2BFE0D1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HideNavigationBarBottomLine.h"; sourceTree = "<group>"; };
 		7B2BFE0E1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HideNavigationBarBottomLine.m"; sourceTree = "<group>"; };
+		7B2BFE111E7A9347004FF659 /* AnimationNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationNavigationViewController.h; sourceTree = "<group>"; };
+		7B2BFE121E7A9347004FF659 /* AnimationNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationNavigationViewController.m; sourceTree = "<group>"; };
+		7B2BFE141E7A9623004FF659 /* NavigationAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationAnimationManager.h; sourceTree = "<group>"; };
+		7B2BFE151E7A9623004FF659 /* NavigationAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +116,13 @@
 		7B2BFDD01E7A40DC004FF659 /* NavigationBarSwipe */ = {
 			isa = PBXGroup;
 			children = (
+				7B2BFE101E7A92E4004FF659 /* NavigationBarAction */,
 				7B2BFDD41E7A40DC004FF659 /* AppDelegate.h */,
 				7B2BFDD51E7A40DC004FF659 /* AppDelegate.m */,
 				7B2BFDD71E7A40DC004FF659 /* ViewController.h */,
 				7B2BFDD81E7A40DC004FF659 /* ViewController.m */,
 				7B2BFE041E7A6F71004FF659 /* FirstViewController.h */,
 				7B2BFE051E7A6F71004FF659 /* FirstViewController.m */,
-				7B2BFE0A1E7A77B8004FF659 /* GlobalSwipeBackViewController.h */,
-				7B2BFE0B1E7A77B8004FF659 /* GlobalSwipeBackViewController.m */,
-				7B2BFE0D1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.h */,
-				7B2BFE0E1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m */,
 				7B2BFDDA1E7A40DC004FF659 /* Main.storyboard */,
 				7B2BFDDD1E7A40DC004FF659 /* Assets.xcassets */,
 				7B2BFDDF1E7A40DC004FF659 /* LaunchScreen.storyboard */,
@@ -153,6 +156,21 @@
 				7B2BFDF81E7A40DD004FF659 /* Info.plist */,
 			);
 			path = NavigationBarSwipeUITests;
+			sourceTree = "<group>";
+		};
+		7B2BFE101E7A92E4004FF659 /* NavigationBarAction */ = {
+			isa = PBXGroup;
+			children = (
+				7B2BFE0A1E7A77B8004FF659 /* GlobalSwipeBackViewController.h */,
+				7B2BFE0B1E7A77B8004FF659 /* GlobalSwipeBackViewController.m */,
+				7B2BFE0D1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.h */,
+				7B2BFE0E1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m */,
+				7B2BFE111E7A9347004FF659 /* AnimationNavigationViewController.h */,
+				7B2BFE121E7A9347004FF659 /* AnimationNavigationViewController.m */,
+				7B2BFE141E7A9623004FF659 /* NavigationAnimationManager.h */,
+				7B2BFE151E7A9623004FF659 /* NavigationAnimationManager.m */,
+			);
+			name = NavigationBarAction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +309,10 @@
 			files = (
 				7B2BFDD91E7A40DC004FF659 /* ViewController.m in Sources */,
 				7B2BFDD61E7A40DC004FF659 /* AppDelegate.m in Sources */,
+				7B2BFE161E7A9623004FF659 /* NavigationAnimationManager.m in Sources */,
 				7B2BFDD31E7A40DC004FF659 /* main.m in Sources */,
 				7B2BFE0C1E7A77B8004FF659 /* GlobalSwipeBackViewController.m in Sources */,
+				7B2BFE131E7A9347004FF659 /* AnimationNavigationViewController.m in Sources */,
 				7B2BFE061E7A6F71004FF659 /* FirstViewController.m in Sources */,
 				7B2BFE0F1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m in Sources */,
 			);

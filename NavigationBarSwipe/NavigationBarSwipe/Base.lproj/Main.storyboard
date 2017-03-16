@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Animation Navigation View Controller-->
         <scene sceneID="LCe-Sn-6eu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iBG-pu-iwl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iBG-pu-iwl" customClass="AnimationNavigationViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Edu-Wa-815">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

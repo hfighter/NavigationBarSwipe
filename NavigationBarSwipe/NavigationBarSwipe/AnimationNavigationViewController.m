@@ -46,10 +46,10 @@
 
 - (void)initialize {
     self.delegate = self;
-    self.navigationBar.tintColor = ColorFromRGB(0x6F7179);
-    self.view.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.view.layer.shadowOffset = CGSizeMake(-0.8, 0);
-    self.view.layer.shadowOpacity = 0.6;
+//    self.navigationBar.tintColor = ColorFromRGB(0x6F7179);
+//    self.view.layer.shadowColor = [UIColor blackColor].CGColor;
+//    self.view.layer.shadowOffset = CGSizeMake(-0.8, 0);
+//    self.view.layer.shadowOpacity = 0.6;
 
     //Do any additional setup after loading the view.
     //1,创建Pan手势识别器,并绑定监听方法
@@ -74,7 +74,7 @@
     _screenshotImgs = [NSMutableArray array];
 }
 
-- (NavigationAnimationManager *)animationController
+- (NavigationAnimationManager *)animationManager
 {
     if (!_animationManager) {
         _animationManager = [[NavigationAnimationManager alloc]init];
@@ -88,11 +88,9 @@
                                             animationControllerForOperation:(UINavigationControllerOperation)operation
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC NS_AVAILABLE_IOS(7_0) {
-    self.animationController.navigationOperation = operation;
-    self.animationController.navigationController = self;
-    //self.animationController.lastVCScreenShot = self.lastVCScreenShotImg;
-    //self.animationController.nextVCScreenShot = self.nextVCScreenShotImg;
-    return self.animationController;
+    self.animationManager.navigationOperation = operation;
+    self.animationManager.navigationController = self;
+    return self.animationManager;
 }
 
 
@@ -174,7 +172,6 @@
     //添加截取好的图片到图片数组
     if (snapshot) {
         [_screenshotImgs addObject:snapshot];
-        //self.lastVCScreenShotImg = snapshot;
     }
 
     //千万记得,结束上下文(移除栈顶的基于当前位图的图形上下文)
@@ -289,7 +286,7 @@
 
             //重要~记得这时候,可以移除截图数组里面最后一张没用的截图了
             //[_screenshotImgs removeLastObject];
-            [self.animationController removeLastScreenShot];
+            [self.animationManager removeLastScreenShot];
         }];
     }
 }

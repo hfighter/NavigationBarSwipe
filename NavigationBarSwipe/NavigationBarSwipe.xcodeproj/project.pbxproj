@@ -20,6 +20,7 @@
 		7B2BFE0F1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE0E1E7A86DE004FF659 /* UIViewController+HideNavigationBarBottomLine.m */; };
 		7B2BFE131E7A9347004FF659 /* AnimationNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE121E7A9347004FF659 /* AnimationNavigationViewController.m */; };
 		7B2BFE161E7A9623004FF659 /* NavigationAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE151E7A9623004FF659 /* NavigationAnimationManager.m */; };
+		7B2BFE221E7BC38B004FF659 /* UINavigationBar+Shade.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BFE211E7BC38A004FF659 /* UINavigationBar+Shade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		7B2BFE121E7A9347004FF659 /* AnimationNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationNavigationViewController.m; sourceTree = "<group>"; };
 		7B2BFE141E7A9623004FF659 /* NavigationAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationAnimationManager.h; sourceTree = "<group>"; };
 		7B2BFE151E7A9623004FF659 /* NavigationAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationManager.m; sourceTree = "<group>"; };
+		7B2BFE201E7BC38A004FF659 /* UINavigationBar+Shade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Shade.h"; sourceTree = "<group>"; };
+		7B2BFE211E7BC38A004FF659 /* UINavigationBar+Shade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Shade.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				7B2BFE121E7A9347004FF659 /* AnimationNavigationViewController.m */,
 				7B2BFE141E7A9623004FF659 /* NavigationAnimationManager.h */,
 				7B2BFE151E7A9623004FF659 /* NavigationAnimationManager.m */,
+				7B2BFE201E7BC38A004FF659 /* UINavigationBar+Shade.h */,
+				7B2BFE211E7BC38A004FF659 /* UINavigationBar+Shade.m */,
 			);
 			name = NavigationBarAction;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			files = (
 				7B2BFDD91E7A40DC004FF659 /* ViewController.m in Sources */,
 				7B2BFDD61E7A40DC004FF659 /* AppDelegate.m in Sources */,
+				7B2BFE221E7BC38B004FF659 /* UINavigationBar+Shade.m in Sources */,
 				7B2BFE161E7A9623004FF659 /* NavigationAnimationManager.m in Sources */,
 				7B2BFDD31E7A40DC004FF659 /* main.m in Sources */,
 				7B2BFE0C1E7A77B8004FF659 /* GlobalSwipeBackViewController.m in Sources */,
